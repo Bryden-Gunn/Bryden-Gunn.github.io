@@ -1,3 +1,5 @@
+/* Styles applying to all screen sizes */
+
 body {
   background-color: #fff6e3;
   color: #f6a623;
@@ -10,6 +12,29 @@ a {
   color: #f6a623;
   font-style: italic;
   font-weight: 800;
+}
+
+p {
+  color: #9b9b9b;
+}
+
+#list {
+  color: #9b9b9b;
+}
+
+#footer-list {
+  color: #9b9b9b;
+}
+
+table {
+  border-collapse: collapse;
+  border: #f6a623 2px solid;
+}
+
+td,
+th {
+  color: #9b9b9b;
+  border: #f6a623 2px solid;
 }
 
 .container {
