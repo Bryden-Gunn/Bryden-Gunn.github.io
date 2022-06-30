@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="html-css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>CSS Technical Conepts</title>
+  </head>
+  <body>
+    <h1>
+      What are the differences between Relative, Absolute, and Fixed
+      positioning?
+    </h1>
+    <p>
+      Understanding CSS position first requires and understanding of CSS display
+      property and CSS Box Model. <br /><br />
+      Unless you understand why elements are placed where they are by default it
+      is much harder to understand what you need to do in order to move them
+      into the position you want. Assuming one understands these initial
+      concepts let’s dive into the differences between Relative Absolute and
+      Fixed positioning. Firstly there is one thing missing from that list and
+      that is the default setting for all elements in CSS which is Static.
+    </p>
+    <h2>Static positioning</h2>
+    <p>
+      Here I have a simple codepen example that demonstrates the default
+      “Static” position that these three divs are placed in when written in
+      HTML. Divs are block level elements and so therefore each one of them is
+      automatically given their own line as well as taking up the full width of
+      their parent container. The height if the div is determined by the size of
+      the content, in this case a very large "H2" and/or padding, border and
+      margin according the box model concept. Because they’re static they follow
+      the chronological order of the HTML document. Ie One, Two & then Three
+      from top to bottom.
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-Technical-Concept-Static .png"
+      alt="Static positioning demo"
+    />
+    <h2>Relative Positioning</h2>
+    <p>
+      This next example demonstrates relative positioning. You will notice I
+      have added position: relative; into the #one rules as well as top: 400px;.
+      What this means in simple terms is “position this element with 400px of
+      distance between it and the original position it would be in if it was
+      still static” “top” meaning “add this distance to the top of the element
+      and which will move it downward”. Bottom, left and right can also be used
+      to move the item in any direction. As you can also see all of the other
+      elements haven’t moved. They are behaving as if Box One is still in it’s
+      original position and they have left a space for it there. The properties
+      bottom, left, and right can ofcoarse be used as well to move the element
+      in any direction.
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-technical-concept-relative.png"
+      alt="relative positioning demo"
+    />
+    <h2>Absolute Positioning</h2>
+    <p>
+      My third example here demonstrates absolute positioning. There are three
+      main differences here between this and relative. First being that the div
+      no longer takes up the full width of the parent container. The size is now
+      only determined by the size of the content ie the large. The second being
+      that the element has been removed from the normal flow of the document.
+      Meaning that the space that would normally be left for it by the other
+      elements is no longer there. They are behaving as if the element doesn’t
+      exist. Thirdly the position of the element is determined relative to the
+      edges of the body as opposed to the elements original position. ie 500px
+      down from the top of the page and 200px from the left.
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-concept-absolute.png"
+      alt="ablsolute positioining demo"
+    />
+    <p>
+      Something else to note here is that if there is no value given for top,
+      bottom, left or right the element will still be placed in it’s original
+      position. For example:
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-technical-Absolute-no-value.png"
+      alt="absolute positioning demo2"
+    />
+    <p>
+      It is only once a value of 0 is given for both top and left that the
+      element moves to the top left corner of the document as shown here:
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/Absolute-0value-given .png"
+      alt="absolute positioining demo3"
+    />
+    <h2>Fixed position</h2>
+    <p>
+      Fixed position is similar to absolute position in that it is removed from
+      the normal flow of the document however the difference here is that
+      (assuming the height of the page is larger than the viewport and you can
+      scroll) the element will stay in the same position relative to the
+      viewport (the edges of your viewing window) and allow everything to scroll
+      up underneath it. For example:
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-technical-fixed-scroll1.png"
+      alt="fixed positioning demo"
+      img
+    />
+    <img
+      src="/content/images/CSS-technical-screenshots/css-technical-fixed-scroll2.png"
+      alt="fixed positioning demo2"
+    />
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-technical-fixed-scroll3 .png"
+      alt="fixed positioning demo3"
+    />
+    <p>
+      Similar to Absolute if there is no value given for top, bottom, left or
+      right the element will still be placed in it’s original position. For
+      example:
+    </p>
+    <img
+      src="/content/images/CSS-technical-screenshots/CSS-technical-fixed-novalue.png"
+      alt="fixed positioning demo4"
+    />
+    <p>
+      In summary each of these position options have their uses. There is one
+      other position option called “Sticky" but that is a topic for a whole
+      different blog post. Sticky is a combination of relative positioning and
+      fixed positioning and has a bunch of cool uses. Hopefully this has been
+      informative and thanks for reading :)
+    </p>
+  </body>
+</html>
