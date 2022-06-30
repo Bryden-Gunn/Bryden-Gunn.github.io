@@ -25,3 +25,15 @@ img {
   display: block;
   height: 500px;
 }
+
+a {
+  text-decoration: none;
+  color: #f6a623;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.homepage-link {
+  width: fit-content;
+  margin: auto;
+}
