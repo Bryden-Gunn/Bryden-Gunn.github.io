@@ -19,7 +19,7 @@
       positioning?
     </h1>
     <p>
-      Understanding CSS position first requires and understanding of CSS display
+      Understanding CSS position first requires an understanding of CSS display
       property and CSS Box Model. <br /><br />
       Unless you understand why elements are placed where they are by default it
       is much harder to understand what you need to do in order to move them
@@ -34,11 +34,11 @@
       “Static” position that these three divs are placed in when written in
       HTML. Divs are block level elements and so therefore each one of them is
       automatically given their own line as well as taking up the full width of
-      their parent container. The height if the div is determined by the size of
+      their parent container. The height of the div is determined by the size of
       the content, in this case a very large "H2" and/or padding, border and
-      margin according the box model concept. Because they’re static they follow
-      the chronological order of the HTML document. Ie One, Two & then Three
-      from top to bottom.
+      margin according the box model concept. Because they are static they
+      follow the chronological order of the HTML document. Ie One, Two & then
+      Three from top to bottom.
     </p>
     <img
       src="/content/images/CSS-technical-screenshots/CSS-Technical-Concept-Static .png"
@@ -51,8 +51,7 @@
       What this means in simple terms is “position this element with 400px of
       distance between it and the original position it would be in if it was
       still static” “top” meaning “add this distance to the top of the element
-      and which will move it downward”. Bottom, left and right can also be used
-      to move the item in any direction. As you can also see all of the other
+      which will move it downward”. As you can also see all of the other
       elements haven’t moved. They are behaving as if Box One is still in it’s
       original position and they have left a space for it there. The properties
       bottom, left, and right can ofcoarse be used as well to move the element
@@ -67,13 +66,13 @@
       My third example here demonstrates absolute positioning. There are three
       main differences here between this and relative. First being that the div
       no longer takes up the full width of the parent container. The size is now
-      only determined by the size of the content ie the large. The second being
-      that the element has been removed from the normal flow of the document.
-      Meaning that the space that would normally be left for it by the other
-      elements is no longer there. They are behaving as if the element doesn’t
-      exist. Thirdly the position of the element is determined relative to the
-      edges of the body as opposed to the elements original position. ie 500px
-      down from the top of the page and 200px from the left.
+      only determined by the size of the content ie the large. "H2" The second
+      being that the element has been removed from the normal flow of the
+      document. Meaning that the space that would normally be left for it by the
+      other elements is no longer there. They are behaving as if the element
+      doesn’t exist. Thirdly the position of the element is determined relative
+      to the edges of the body as opposed to the element's original position. ie
+      500px down from the top of the page and 200px from the left.
     </p>
     <img
       src="/content/images/CSS-technical-screenshots/CSS-concept-absolute.png"
