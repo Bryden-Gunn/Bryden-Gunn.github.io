@@ -4,8 +4,10 @@ body {
 }
 
 h2,
-h1 {
-  margin: auto;
+h1,
+h3,
+h4 {
+  margin: auto auto 10px auto;
   display: block;
   text-align: center;
   max-width: 600px;
