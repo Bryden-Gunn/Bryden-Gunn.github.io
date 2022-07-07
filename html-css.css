@@ -39,3 +39,66 @@ a {
   width: fit-content;
   margin: auto;
 }
+
+#trademe1 {
+  height: 150px;
+}
+
+#trademe-watchlist {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: auto;
+}
+
+#trademe2 {
+  height: 250px;
+}
+
+#trademe3 {
+  height: 250px;
+}
+
+#cards {
+  height: 200px;
+}
+
+#toy-train {
+  height: 200px;
+}
+
+#loop-example {
+  height: 300px;
+}
+
+#dom-manipulation {
+  height: 250px;
+}
+
+#fruits-array1 {
+  height: 175px;
+}
+
+#object-example {
+  height: 200px;
+}
+
+#object-example2 {
+  height: 300px;
+}
+
+#array-access-example {
+  height: 175px;
+}
+
+#object-access-example {
+  height: 300px;
+}
+
+#function-example {
+  height: 250px;
+}
+
+#change-function-example {
+  height: 250px;
+}

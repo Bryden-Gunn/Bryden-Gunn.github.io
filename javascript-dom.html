@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="html-css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS Fundamentals</title>
+  </head>
+  <body>
+    <h1>Introduction to JavaScript fundamentals</h1>
+    <p>
+      Javascript is the crucial piece needed, along with HTML and CSS, that
+      makes possible the dynamic, functional and somewhat intelligent
+      applications that we use in our daily lives. Without Javascript (or a
+      language like it) services like Trademe or Internet Banking couldn’t
+      exist.
+    </p>
+    <img
+      id="trademe1"
+      src="/content/images/JS-fundamentals/trademe-1.png"
+      alt="Trademe Homepage"
+    />
+    <p>
+      For example, Simply adding an item to your watch-list requires that you
+      first have a profile to attribute this watch-list item to. Not to mention
+      display a tick next to it as well as notify the seller that another user
+      has added their item to their watch-list. This is but the tip of the
+      iceberg of complexity here but you get the picture.
+    </p>
+    <div id="trademe-watchlist">
+      <img
+        id="trademe2"
+        src="/content/images/JS-fundamentals/trademe-2.png"
+        alt="trademe screenshot"
+      />
+      <img
+        id="trademe3"
+        src="/content/images/JS-fundamentals/trademe-3.png"
+        alt="trademe screenshot 3"
+      />
+    </div>
+    <p>
+      Think of it like a game of cards. HTML and CSS could be used to dictate
+      what each card is called, what suit each card is and what they all look
+      like. Javascript however is the language that gives meaning to each card
+      within the game. The underlying logic or rules of the game would be
+      written in Javascript.
+    </p>
+    <img
+      id="cards"
+      src="/content/images/JS-fundamentals/cards.png"
+      alt="Cards"
+    />
+    <p>
+      One important factor in programming is the order in which things are
+      written. This is known as “Control Flow”. Generally a computer will read
+      code from top to bottom like reading a book. However there are ways in
+      which this can be changed. For instance, you can make the computer repeat
+      a certain section of code a number of times before moving on. This is
+      known as a “Loop”. More on loops in a moment. You can also make the
+      computer choose between one pathway or another depending on a certain
+      condition. This is know as an “if statement”. So I would think of Control
+      flow almost like a toy train set. You can make that train repeat a certain
+      section of track a number of times before it continues back onto the
+      mainline. You could make the train choose one of two different lines to go
+      down depending on how many carriages it is pulling.
+    </p>
+    <img
+      id="toy-train"
+      src="/content/images/JS-fundamentals/toy-train.png"
+      alt="toy train"
+    />
+    <p>
+      Now to Revisit Loops. One handy thing that we can make the computer do is
+      repeat a task a number of times before moving on. This is known as a Loop.
+      In this example I am making the computer count from 1 to 10 and write the
+      number out every time around until it reaches 10. As you can imagine doing
+      this is with a loop is far more convenient than doing it manually.
+      Especially if, for instance, you had to count to 1000.
+    </p>
+
+    <img
+      id="loop-example"
+      src="/content/images/JS-fundamentals/loop-example.png"
+      alt="Example of loop"
+    />
+    <p>
+      The DOM could be thought of as “the HTML document from Javascript’s point
+      of view”. Or perhaps “Javascript’s personal map around the HTML file” In
+      order for us to see what javascript is doing it needs to be rendered on
+      the webpage. In order for us to do this we need to manipulate one or more
+      of the HTML elements. For instance change the text inside it, change the
+      colour of it or make it disappear all together. The DOM allows us to do
+      this by giving us a standardised way to tell Javascript which HTML
+      element/s to take hold of and what to do with them. <br /><br />
+      Here is an example where I tell the javascript to change the color of the
+      h1 text to Blue. The function document.getElementById("heading") means
+      “look for the HTML element with the Identifier of heading” and the
+      “.style.color = "blue”;” means "change the color of the text to blue".
+    </p>
+    <img
+      id="dom-manipulation"
+      src="/content/images/JS-fundamentals/DOM-manipulation-demo.png"
+      alt="DOM DOM-manipulation-demo"
+    />
+    <p>
+      Two very useful tools in Javascript are arrays and objects. Arrays could
+      be thought of as more like lists. Where as objects could be thought of as
+      more like spreadsheets. An example of an array could be this list of
+      fruits:
+    </p>
+    <img
+      src="/content/images/JS-fundamentals/array-example.png"
+      alt="Array example"
+      id="fruits-array1"
+    />
+    <p>
+      An example of an object could be a record of this person John including
+      their age and eye color:
+    </p>
+    <img
+      src="/content/images/JS-fundamentals/object-example.png"
+      alt="object example"
+      id="object-example"
+    />
+    <p>
+      But often you will have multiple objects together ie a list of people
+      which also details their name, age and eye colour. Putting this list
+      together could be done by creating objects within objects. For example:
+    </p>
+    <img
+      src="/content/images/JS-fundamentals/multiple-objects-example.png"
+      alt="Multiple objects example"
+      id="object-example2"
+    />
+    <p>
+      Accessing data from within an array or an object is a common task
+      performed by Javascript. Each data type has their own method for accessing
+      the information within. From within an array you specify what’s known as
+      the ‘index’ of the array or in simpler terms the position of the item in
+      the list. for example: fruits[1] accesses the second item in the list of
+      fruits (array indexes start counting from 0 as apposed to 1).
+    </p>
+    <img
+      src="/content/images/JS-fundamentals/accessing-data-array.png"
+      alt="Accessing data from an aray"
+      id="array-access-example"
+    />
+    <p>
+      From within an object it could be thought of as similar to a file path ie
+      “documents/pictures/family-photos/picnic.png” but slightly different
+      syntax. For example: listOfPeople.Steven.eyeColor accesses the eyeColor
+      property from within the Steven object from within the listOfPeople
+      object. you can see how this would be useful when creating applications
+      that are dependant on a set of data.
+    </p>
+    <img
+      src="/content/images/JS-fundamentals/object-access-example.png"
+      alt="Accessing data from an object"
+      id="object-access-example"
+    />
+    <p>
+      Lastly I will talk about functions. The best analogy I can think of for
+      this is managing a barista in a cafe. Every time a customer orders a flat
+      white the last thing you would want to have to do is explain to the
+      Barista each step in detail that is involved in making a flat white. They
+      should already remember those steps and execute them from memory without
+      thinking about it. The same goes for functions in Javascript. Instead of
+      repeating yourself when writing code you can store a set of instructions
+      inside a function and every time that function is “called”, or triggered
+      you could say, the computer will execute those steps. For example: Here
+      the multiply function is multiplying 5 by 5 and giving me the answer. I
+      have made the computer do this four times.
+    </p>
+    <img
+      id="function-example"
+      src="/content/images/JS-fundamentals/function-example.png"
+      alt="example of a function"
+    />
+    <p>
+      Furthermore this also makes it easier to change the instructions for the
+      function should you need to. Say for instance in the cafe you decide that
+      you would like to automatically add 1 sugar to every flat white sold. You
+      would only want to have to tell the barista once. As apposed to having to
+      remind them every time to add the sugar. The same goes for functions. The
+      changes you make inside a function will now be applied every time that
+      function gets triggered afterwards. For example: Here i have changed the
+      function to multiply 5 by 25 instead. And in turn the computer gives us
+      the new answer four times.
+    </p>
+    <img
+      id="change-function-example"
+      src="/content/images/JS-fundamentals/funciton-change-example.png"
+      alt="Change function example"
+    />
+    <p>
+      In summary these are but a few of the capabilities of Javascript and I am
+      far from learning the full extent of the language. With these few
+      capabilities however, much can be achieved.
+    </p>
+  </body>
+</html>
